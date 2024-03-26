@@ -1,19 +1,19 @@
 {
   "name": "iobroker.megaesp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Lets control the Mega-ESP over ethernet (http://ab-log.ru/forum/viewtopic.php?f=1&t=1130) from ioBroker",
   "author": {
     "name": "ausHaus",
     "email": "teshaus@gmail.com"
   },
-  "homepage": "https://github.com/ausHaus/ioBroker.megaesp",
+  "homepage": "https://github.com/Moxnatiy/ioBroker.megaesp",
   "keywords": [
     "ioBroker",
     "Mega-ESP"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ausHaus/ioBroker.megaesp.git"
+    "url": "git+https://github.com/Moxnatiy/ioBroker.megaesp.git"
   },
   "dependencies": {
     "@iobroker/adapter-core": "^3.0.3"

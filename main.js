@@ -164,17 +164,20 @@ adapter.on('message', function (obj) {
                 break;
         }
     }
-    processMessages();
+    //processMessages();
 });
 
-function processMessages(ignore) {
-    adapter.getMessage(function (err, obj) {
-        if (obj) {
-            if (!ignore && obj && obj.command == 'send') processMessage(obj.message);
-            processMessages();
-        }
-    });
-}
+// function processMessages(ignore) {
+
+//     adapter.log.warn('processMessages call: ' + JSON.stringify(obj));
+
+//     // adapter.getMessage(function (err, obj) {
+//     //     if (obj) {
+//     //         if (!ignore && obj && obj.command == 'send') processMessage(obj.message);
+//     //         processMessages();
+//     //     }
+//     // });
+// }
 
 // Because the only one port is occupied by first instance, the changes to other devices will be send with messages
 function processMessage(message) {
@@ -2074,7 +2077,7 @@ function main() {
     }
     syncObjects();
     adapter.subscribeStates('*');
-    processMessages(true);
+    //processMessages(true);
 }
 
 
